@@ -1,0 +1,43 @@
+# Dependency folders
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+client/.env
+client/.env.*
+server/.env
+server/.env.*
+
+# Build and distribution folders
+client/.next/
+client/out/
+client/build/
+server/dist/
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+client/*.log
+server/*.log
+
+# Debug and system files
+.DS_Store
+Thumbs.db
+*.pem
+*.key
+.vscode/
+.idea/
+*.tsbuildinfo
+client/next-env.d.ts
+
+# Uploads directory
+server/uploads/
