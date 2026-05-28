@@ -310,4 +310,4 @@ Pull requests are welcome! Please open an issue first to discuss what you'd like
 
 ---
 
-*Built with ❤️ for students, by students.*
+*Built with ❤️ for students, by Bernardo.*
