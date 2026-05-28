@@ -14,6 +14,7 @@ import { adminAPI, engagementAPI } from "@/lib/api";
 import { useAuthStore } from "@/lib/store";
 import toast from "react-hot-toast";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 // Overhauled Elite Components
 import EliteSidebar from "./components/EliteSidebar";
@@ -142,13 +143,13 @@ export default function SuperAdminDashboard() {
             </button>
             
             {/* Elegant Back Button */}
-            <button 
-              onClick={() => router.push("/dashboard")}
+            <Link 
+              href="/dashboard"
               className="group flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-white/[0.05] bg-white/[0.02] hover:bg-white/[0.06] hover:border-indigo-500/20 text-xs font-bold text-gray-400 hover:text-white transition-all duration-200"
             >
               <ArrowLeft size={13} className="group-hover:-translate-x-0.5 transition-transform" />
               <span>Back to Platform</span>
-            </button>
+            </Link>
             
             <div className="w-[1px] h-4 bg-white/[0.08]" />
 

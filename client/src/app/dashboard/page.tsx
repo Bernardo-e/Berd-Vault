@@ -41,7 +41,6 @@ export default function DashboardPage() {
   useEffect(() => {
     if (!isHydrated) return;
     if (!isAuthenticated) { router.push("/auth"); return; }
-    if (user?.role === "staff") { router.push("/staff"); return; }
     
     Promise.all([
       notesAPI.getTrending(),

@@ -238,6 +238,14 @@ export default function Navbar() {
                             <LayoutDashboard size={15} /> {user?.role === "superadmin" ? "Super Admin" : "Admin Panel"}
                           </Link>
                         )}
+                        {user?.role === "staff" && (
+                          <Link 
+                            href="/staff" 
+                            className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm hover:bg-[var(--bg-subtle)] transition text-[#6C63FF]"
+                          >
+                            <LayoutDashboard size={15} /> Staff Portal
+                          </Link>
+                        )}
                         <hr className="my-1 border-[var(--border)]" />
                         <button
                           onClick={handleLogout}

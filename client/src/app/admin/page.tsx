@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useCallback } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
   ShieldAlert, 
@@ -158,13 +159,13 @@ export default function AdminDashboard() {
         <header className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10 pb-6 border-b border-white/[0.04]">
           <div className="flex items-center gap-4">
             {/* Quick platform return option */}
-            <button 
-              onClick={() => router.push("/dashboard")}
+            <Link 
+              href="/dashboard"
               className="p-3 rounded-xl border border-white/5 bg-black/40 backdrop-blur-xl text-gray-400 hover:text-blue-400 hover:border-blue-500/20 hover:shadow-[0_0_15px_rgba(59,130,246,0.15)] transition-all duration-300 flex items-center justify-center gap-2 group text-xs font-mono font-bold"
             >
               <ArrowLeft size={14} className="group-hover:-translate-x-0.5 transition-transform" />
               <span>EXIT_TO_PLATFORM</span>
-            </button>
+            </Link>
             <div className="w-[1.5px] h-8 bg-gradient-to-b from-blue-500/20 via-transparent to-purple-500/20 hidden md:block" />
             
             <div>
